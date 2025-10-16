@@ -2,11 +2,7 @@ import MaxWidthWrapper from "./MaxWidthWrapper"
 import Link from "next/link"
 import { buttonVariants } from "./ui/button"
 import { getSiteSettings } from "@/lib/data"
-import {
-  LoginLink,
-  LogoutLink,
-  RegisterLink,
-} from "@kinde-oss/kinde-auth-nextjs/components"
+import { LoginLink, LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components"
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server"
 import Logo from "./Logo"
 
@@ -16,7 +12,7 @@ const Navbar = async () => {
   const user = await getUser()
 
   return (
-    <nav className='sticky h-16 inset-x-0 top-0 z-30 w-full bg-transparent transition-all shadow-lg'>
+    <nav className='sticky h-16 inset-x-0 top-0 z-30 w-full bg-blurry transition-all shadow-lg'>
       <MaxWidthWrapper>
         <div className='flex h-16 items-center justify-between'>
           <Link
@@ -60,7 +56,7 @@ const Navbar = async () => {
             >
               Contact
             </Link>
-            {isAuthenticated ? (
+            {isAuthenticated() ? (
               <>
                 <Link
                   href='/admin'

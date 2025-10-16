@@ -15,7 +15,6 @@ import {
   Shield,
   CreditCard,
   Star,
-  CheckCircle,
   Droplets,
   Thermometer,
   Wind,
@@ -218,7 +217,7 @@ export default async function HomePage() {
                   WATER SYSTEM
                 </h3>
                 <p className='text-white/90 leading-relaxed font-medium'>
-                  High-efficient laundry with Blue Wave's exclusive ozone water
+                  High-efficient laundry with Blue Wave&apos;s exclusive ozone water
                   system
                 </p>
               </div>
