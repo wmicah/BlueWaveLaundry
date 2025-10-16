@@ -57,18 +57,6 @@ export default async function HomePage() {
               </div>
             </ScrollAnimation>
 
-            {/* Trust Badge */}
-            <ScrollAnimation
-              delay={0.4}
-              direction='fade'
-              duration={0.8}
-            >
-              <div className='inline-flex items-center gap-3 bg-teal/20 backdrop-blur-sm border border-teal/30 rounded-full px-6 py-3 text-sm font-semibold text-teal-100'>
-                <Star className='h-5 w-5 text-yellow-400' />
-                24/7 Open • Expert Service • Premium Equipment
-              </div>
-            </ScrollAnimation>
-
             {/* Main Headline - Bold and Modern */}
             <ScrollAnimation
               delay={0.6}
@@ -76,10 +64,10 @@ export default async function HomePage() {
               duration={0.8}
             >
               <h1 className='text-6xl md:text-8xl font-black text-white leading-[0.9] tracking-tight'>
-                WASH CLEANER.
+                Title Placeholder
                 <br />
                 <span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-teal-200'>
-                  WITH OZONE!
+                  Placeholder
                 </span>
               </h1>
             </ScrollAnimation>
@@ -109,16 +97,11 @@ export default async function HomePage() {
               <div className='flex flex-col sm:flex-row gap-6 justify-center pt-8'>
                 <Button
                   asChild
+                  variant='outline'
                   size='lg'
                   className='border-0 border-white text-white hover:bg-white/10 backdrop-blur-sm px-12 py-6 text-lg font-bold shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:text-teal-400'
                 >
-                  <Link
-                    href='/contact'
-                    className='flex items-center gap-3'
-                  >
-                    GET STARTED TODAY
-                    <ArrowRight className='h-6 w-6 group-hover:translate-x-1 transition-transform' />
-                  </Link>
+                  <Link href='/contact'>GET STARTED TODAY</Link>
                 </Button>
                 <Button
                   asChild
@@ -208,7 +191,7 @@ export default async function HomePage() {
             className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'
           >
             {/* Water System */}
-            <div className='group text-center space-y-8 p-10 rounded-3xl bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-100 transition-all duration-500 hover:-translate-y-3 border-2 border-blue-100 hover:border-blue-200 hover:shadow-2xl'>
+            <div className='group text-center space-y-8 p-10 rounded-3xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-500 hover:-translate-y-3 border border-white/20 hover:border-white/30 hover:shadow-2xl'>
               <div className='w-24 h-24 bg-gradient-to-br from-blue-600 to-teal-600 rounded-3xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300 shadow-lg'>
                 <Droplets className='h-12 w-12 text-white' />
               </div>
@@ -217,14 +200,14 @@ export default async function HomePage() {
                   WATER SYSTEM
                 </h3>
                 <p className='text-white/90 leading-relaxed font-medium'>
-                  High-efficient laundry with Blue Wave&apos;s exclusive ozone water
-                  system
+                  High-efficient laundry with Blue Wave&apos;s exclusive ozone
+                  water system
                 </p>
               </div>
             </div>
 
             {/* Best Boilers */}
-            <div className='group text-center space-y-8 p-10 rounded-3xl bg-gradient-to-br from-orange-50 to-orange-50 hover:from-orange-100 hover:to-orange-100 transition-all duration-500 hover:-translate-y-3 border-2 border-orange-100 hover:border-orange-200 hover:shadow-2xl'>
+            <div className='group text-center space-y-8 p-10 rounded-3xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-500 hover:-translate-y-3 border border-white/20 hover:border-white/30 hover:shadow-2xl'>
               <div className='w-24 h-24 bg-gradient-to-br from-orange-600 to-red-600 rounded-3xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300 shadow-lg'>
                 <Thermometer className='h-12 w-12 text-white' />
               </div>
@@ -240,7 +223,7 @@ export default async function HomePage() {
             </div>
 
             {/* Ozone */}
-            <div className='group text-center space-y-8 p-10 rounded-3xl bg-gradient-to-br from-purple-50 to-purple-50 hover:from-purple-100 hover:to-purple-100 transition-all duration-500 hover:-translate-y-3 border-2 border-purple-100 hover:border-purple-200 hover:shadow-2xl'>
+            <div className='group text-center space-y-8 p-10 rounded-3xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-500 hover:-translate-y-3 border border-white/20 hover:border-white/30 hover:shadow-2xl'>
               <div className='w-24 h-24 bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300 shadow-lg'>
                 <Wind className='h-12 w-12 text-white' />
               </div>
@@ -253,7 +236,7 @@ export default async function HomePage() {
             </div>
 
             {/* Filtration */}
-            <div className='group text-center space-y-8 p-10 rounded-3xl bg-gradient-to-br from-green-50 to-green-50 hover:from-green-100 hover:to-green-100 transition-all duration-500 hover:-translate-y-3 border-2 border-green-100 hover:border-green-200 hover:shadow-2xl'>
+            <div className='group text-center space-y-8 p-10 rounded-3xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-500 hover:-translate-y-3 border border-white/20 hover:border-white/30 hover:shadow-2xl'>
               <div className='w-24 h-24 bg-gradient-to-br from-green-600 to-emerald-600 rounded-3xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300 shadow-lg'>
                 <Filter className='h-12 w-12 text-white' />
               </div>
@@ -375,11 +358,11 @@ export default async function HomePage() {
               {amenities.map((amenity: any, index: number) => (
                 <div
                   key={amenity.id}
-                  className='group bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border border-gray-100 hover:border-teal-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1'
+                  className='group bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:border-white/30 hover:bg-white/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-1'
                 >
                   <div className='flex items-center gap-4'>
-                    <div className='w-12 h-12 bg-gradient-to-br from-teal-100 to-teal-200 rounded-xl flex items-center justify-center group-hover:from-teal-500 group-hover:to-teal-600 transition-all duration-300'>
-                      <span className='text-2xl group-hover:text-white transition-colors duration-300'>
+                    <div className='w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl flex items-center justify-center group-hover:from-teal-400 group-hover:to-teal-500 transition-all duration-300'>
+                      <span className='text-2xl text-white transition-colors duration-300'>
                         {index === 0
                           ? "📶"
                           : index === 1
@@ -444,112 +427,78 @@ export default async function HomePage() {
       )}
 
       {/* WASH HAPPY - Facility Showcase */}
-      <section className='py-32 bg-white relative'>
+      <section className='py-32 relative'>
         <MaxWidthWrapper>
           <ScrollAnimation
             direction='fade'
             duration={0.8}
           >
             <div className='text-center mb-20'>
-              <h2 className='text-5xl md:text-7xl font-black text-gray-900 mb-8 leading-tight'>
+              <h2 className='text-5xl md:text-7xl font-black text-white mb-8 leading-tight'>
                 WASH HAPPY
               </h2>
-              <p className='text-xl text-gray-600 max-w-4xl mx-auto font-medium'>
+              <p className='text-xl text-white/90 max-w-4xl mx-auto font-medium'>
                 We have created the most beautiful laundry in the world. Where
                 your comfort is our priority.
                 <br />
                 Here you will find the cleanest laundry you've ever seen. With
                 massive TVs, lots of seating, Big Ass fans.
               </p>
-              <div className='mt-6 text-2xl font-bold text-gray-800'>
+              <div className='mt-6 text-2xl font-bold text-white'>
                 Our big secret. Premium Tech Washers!
               </div>
             </div>
           </ScrollAnimation>
 
-          {/* Facility Features Grid */}
-          <StaggeredAnimation
-            direction='scale'
-            staggerDelay={0.1}
-            className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20'
-          >
-            <div className='text-center space-y-4 p-8 bg-gradient-to-br from-teal-50 to-blue-50 rounded-3xl border-2 border-teal-100'>
-              <div className='w-16 h-16 bg-gradient-to-br from-royal-blue to-teal rounded-2xl flex items-center justify-center mx-auto'>
-                <Zap className='h-8 w-8 text-white' />
+          {/* Key Features - Simplified */}
+          <div className='text-center mb-16'>
+            <div className='inline-flex items-center gap-8 bg-white/10 backdrop-blur-sm rounded-2xl px-8 py-6 border border-white/20'>
+              <div className='text-center'>
+                <div className='text-3xl font-black text-white mb-2'>
+                  100 LB
+                </div>
+                <div className='text-sm text-white/80 uppercase tracking-wide'>
+                  Max Capacity
+                </div>
               </div>
-              <h3 className='text-xl font-black text-gray-900'>Blue Wave</h3>
-              <p className='text-gray-700 font-medium'>
-                EASIER. FASTER. CLEANER. BETTER.
-              </p>
-            </div>
-
-            <div className='text-center space-y-4 p-8 bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl border-2 border-purple-100'>
-              <div className='w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl flex items-center justify-center mx-auto'>
-                <Sparkles className='h-8 w-8 text-white' />
+              <div className='w-px h-12 bg-white/30'></div>
+              <div className='text-center'>
+                <div className='text-3xl font-black text-white mb-2'>200G</div>
+                <div className='text-sm text-white/80 uppercase tracking-wide'>
+                  Spin Speed
+                </div>
               </div>
-              <h3 className='text-xl font-black text-gray-900'>
-                Our big secret.
-              </h3>
-              <p className='text-gray-700 font-medium'>Premium Tech Washers</p>
-            </div>
-
-            <div className='text-center space-y-4 p-8 bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl border-2 border-green-100'>
-              <div className='w-16 h-16 bg-gradient-to-br from-green-600 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto'>
-                <Wind className='h-8 w-8 text-white' />
+              <div className='w-px h-12 bg-white/30'></div>
+              <div className='text-center'>
+                <div className='text-3xl font-black text-white mb-2'>
+                  45 MIN
+                </div>
+                <div className='text-sm text-white/80 uppercase tracking-wide'>
+                  Cycle Time
+                </div>
               </div>
-              <h3 className='text-xl font-black text-gray-900'>
-                Premium Tech Washers
-              </h3>
-              <p className='text-gray-700 font-medium'>Genius Series Washers</p>
             </div>
+          </div>
 
-            <div className='text-center space-y-4 p-8 bg-gradient-to-br from-orange-50 to-red-50 rounded-3xl border-2 border-orange-100'>
-              <div className='w-16 h-16 bg-gradient-to-br from-orange-600 to-red-600 rounded-2xl flex items-center justify-center mx-auto'>
-                <Thermometer className='h-8 w-8 text-white' />
-              </div>
-              <h3 className='text-xl font-black text-gray-900'>
-                Speed, Speed, Speed
-              </h3>
-              <p className='text-gray-700 font-medium'>
-                Extract speeds of up to 200G-force.
-              </p>
-            </div>
-          </StaggeredAnimation>
-
-          {/* Trust Indicators */}
-          <StaggeredAnimation
-            direction='bounce'
-            staggerDelay={0.2}
-            className='grid grid-cols-1 md:grid-cols-3 gap-8 text-center'
-          >
-            <div className='space-y-4 p-8 bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl border-2 border-gray-200'>
-              <Clock className='h-12 w-12 text-teal mx-auto' />
-              <h3 className='text-2xl font-black text-gray-900'>24 HOURS</h3>
-              <p className='text-gray-700 font-medium'>
-                Come wash at Blue Wave anytime, anyday.
+          {/* Service Highlights */}
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto'>
+            <div className='text-center space-y-4 p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20'>
+              <h3 className='text-2xl font-black text-white'>24/7 ACCESS</h3>
+              <p className='text-white/90 font-medium'>
+                Open 365 days a year, 24 hours a day. Come wash anytime.
               </p>
             </div>
 
-            <div className='space-y-4 p-8 bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl border-2 border-gray-200'>
-              <CreditCard className='h-12 w-12 text-teal mx-auto' />
-              <h3 className='text-2xl font-black text-gray-900'>
-                PAY WITH APP
+            <div className='text-center space-y-4 p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20'>
+              <h3 className='text-2xl font-black text-white'>
+                CONTACTLESS PAY
               </h3>
-              <p className='text-gray-700 font-medium'>
-                Pay with our App, Credit, Debit, EBT or Cash
+              <p className='text-white/90 font-medium'>
+                Pay with our app, credit cards, debit, or EBT. No quarters
+                needed.
               </p>
             </div>
-
-            <div className='space-y-4 p-8 bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl border-2 border-gray-200'>
-              <Star className='h-12 w-12 text-teal mx-auto' />
-              <h3 className='text-2xl font-black text-gray-900'>
-                BEST SERVICE
-              </h3>
-              <p className='text-gray-700 font-medium'>
-                Best Customer Service • Always SUPER HOT!
-              </p>
-            </div>
-          </StaggeredAnimation>
+          </div>
         </MaxWidthWrapper>
       </section>
 
